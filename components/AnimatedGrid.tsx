@@ -29,4 +29,4 @@ const AnimatedGrid = ({ children }: Props) => {
     );
 }
 
-export default AnimatedGrid;
+export default AnimatedGrid

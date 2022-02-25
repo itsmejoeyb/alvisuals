@@ -3,7 +3,6 @@ import AnimatedText from '../components/AnimatedText'
 import { motion } from 'framer-motion'
 import AnimatedLine from '../components/AnimatedLine'
 import AnimatedGrid from '../components/AnimatedGrid'
-import { useLayoutEffect, useRef, useState } from 'react'
 import Line from '../components/Line'
 import Grid from '../components/Grid'
 import ProjectSummary from '../components/ProjectSummary'
@@ -23,19 +22,6 @@ const appear = {
 const Home = () => {
     const title = ''
     const subtitle = ''
-    const featured = useRef<HTMLDivElement>(null)
-    const [margin, setMargin] = useState(0)
-
-    const fixMargin = (el: HTMLElement) => {
-        setMargin(-el.getBoundingClientRect().left)
-    }
-
-    useLayoutEffect(() => {
-        if(featured !== null) {
-            //@ts-ignore
-            fixMargin(featured.current)
-        }
-    }, [])
 
     return (
         <Layout title="Home" description={`${title} - ${subtitle}`}>
@@ -86,7 +72,7 @@ const Home = () => {
                     className="col-span-4 md:col-span-11 h-[700px] relative my-4"
                     variants={appear}
                 >
-                    <div ref={featured} className='h-full flex justify-center items-center w-full absolute bg-black' style={{marginLeft: margin}}>
+                    <div className='h-full flex justify-center items-center w-full absolute bg-black'>
                         <div className='text-3xl'>Reel goes here</div>
                     </div>
                 </motion.div>

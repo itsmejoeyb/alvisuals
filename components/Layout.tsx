@@ -16,7 +16,7 @@ const variants = {
 
 const Layout = ({ children, title, description }: Props): JSX.Element => (
     <div className="bg-[#161619] min-h-screen">
-        <NextSeo title={title} description={description} openGraph={{ title, description }} />
+        <NextSeo title={"AL Visuals | " + title} description={description} openGraph={{ title, description }} />
         <motion.main
             variants={variants}
             initial="hidden"

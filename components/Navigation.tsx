@@ -16,8 +16,8 @@ const navItems: NavItem[] = [
 ]
 
 const Navigation = () => {
-    const [selectedLink, setSelectedLink] = useState(null)
     const router = useRouter()
+    const [selectedLink, setSelectedLink] = useState(null)
 
     useEffect(() => {
         const index = navItems.map(item => item.href).indexOf(router.pathname)

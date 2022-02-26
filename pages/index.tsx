@@ -29,7 +29,7 @@ const Home = () => {
                 <AnimatedText line1="Capturing the" line2="Bigger Picture" />
             </div>
             <AnimatedLine delay={0.7} emoji="🎥" />
-            <AnimatedGrid>
+            <AnimatedGrid delay={.9}>
                 <motion.div
                     className="col-span-4 font-sans font-light"
                     variants={appear}

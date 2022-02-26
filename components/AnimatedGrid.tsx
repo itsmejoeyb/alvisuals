@@ -3,20 +3,22 @@ import { motion } from 'framer-motion'
 
 type Props = {
     children: ReactNode
+    delay: number
 }
 
-const container = {
-    hidden: { opacity: 1 },
-    visible: { opacity: 1,
-        transition: {
-            staggerChildren: .2,
-            delayChildren: .9,
-            
+const AnimatedGrid = ({ children, delay }: Props) => {
+    const container = {
+        hidden: { opacity: 1 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: .2,
+                delayChildren: delay,
+
+            }
         }
     }
-}
 
-const AnimatedGrid = ({ children }: Props) => {
     return (
         <motion.div 
             className='grid grid-cols-4 md:grid-cols-12 gap-x-4 gap-y-11'

@@ -40,7 +40,7 @@ const Navigation = () => {
                             <a className="text-sm">{item.title}</a>
                         </NoScrollLink>
                         {item === selectedLink && (
-                            <motion.div className="h-[2px] bg-purple-400 w-full" layoutId="underline" />
+                            <motion.div className="h-[2px] bg-purple-400 w-full" layoutId="navigation" />
                         )}
                     </li>
                 ))}

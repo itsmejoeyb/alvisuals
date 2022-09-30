@@ -34,7 +34,7 @@ const Navigation = () => {
                 {navItems.map(item => (
                     <li 
                         key={item.title} 
-                        className='mx-4 relative'
+                        className='relative mx-2'
                     >
                         <NoScrollLink href={item.href} >
                             <a className="text-sm">{item.title}</a>

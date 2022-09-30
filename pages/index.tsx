@@ -84,7 +84,7 @@ const Home = () => {
                     </p>
                 </div>
                 <Line title="ABOUT US" emoji='📝' width="60%" />
-                <h2 className='text-7xl lg:w-1/2 pb-16 pt-8'>Cinematography, and so much more.</h2>
+                <h2 className='text-4xl lg:text-7xl lg:w-1/2 pb-16 pt-8'>Cinematography, and so much more.</h2>
                 <Grid>
                     <div className="col-span-4 font-sans font-light">
                         <p className="text-base text-gray-400">
@@ -119,7 +119,7 @@ const Home = () => {
                     </p>
                 </div>
                 <Line title="OUR WORK" emoji='🎬' width="80%" />
-                <h2 className='text-7xl lg:w-1/2 pb-16 pt-8'>Your vision, our passion.</h2>
+                <h2 className='text-4xl lg:text-7xl lg:w-1/2 pb-16 pt-8'>Your vision, our passion.</h2>
                 <div className=''>
                     <ProjectSummary reverse={false} />
                     <ProjectSummary reverse={true} />
